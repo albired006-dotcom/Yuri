@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pizzeria Empire pizza</title>
+        <style>
+        * {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+        }
+
+        body {
+background-color: #fff8f0;
+color: #333;
+line-height: 1.6;
+        }
+
+        header {
+background-color: #b22222;
+color: white;
+text-align: center;
+padding: 30px 20px;
+        }
+
+        header h1 {
+font-size: 2.5rem;
+margin-bottom: 10px;
+        }
+
+        nav {
+background-color: #8b0000;
+text-align: center;
+padding: 12px;
+        }
+
+        nav a {
+color: white;
+text-decoration: none;
+margin: 0 15px;
+font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            max-width: 1100px;
+margin: 30px auto;
+padding: 20px;
+background-color: white;
+border-radius: 10px;
+box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+color: #b22222;
+margin-bottom: 15px;
+border-bottom: 2px solid #f4d03f;
+display: inline-block;
+padding-bottom: 5px;
+        }
+
+        .intro {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+align-items: center;
+        }
+
+        .intro img {
+width: 100%;
+max-width: 450px;
+border-radius: 10px;
+        }
+
+        .intro-text {
+flex: 1;
+min-width: 260px;
+        }
+
+        .services {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 20px;
+margin-top: 15px;
+        }
+
+        .card {
+background-color: #fff3e6;
+padding: 18px;
+border-radius: 10px;
+text-align: center;
+border: 1px solid #f1d2b6;
+        }
+
+        .card img {
+width: 100%;
+height: 160px;
+object-fit: cover;
+border-radius: 8px;
+margin-bottom: 10px;
+        }
+
+        .menu-table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 15px;
+        }
+
+        .menu-table th,
+        .menu-table td {
+border: 1px solid #ddd;
+padding: 12px;
+text-align: left;
+        }
+
+        .menu-table th {
+background-color: #b22222;
+color: white;
+        }
+
+        .map-container iframe {
+width: 100%;
+height: 350px;
+border: 0;
+border-radius: 10px;
+margin-top: 15px;
+        }
+
+        .contacts p {
+                margin: 8px 0;
+        }
+
+        form {
+display: grid;
+gap: 12px;
+margin-top: 15px;
+        }
+
+        input, select, textarea, button {
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 8px;
+font-size: 1rem;
+        }
+
+        button {
+background-color: #b22222;
+color: white;
+border: none;
+cursor: pointer;
+font-weight: bold;
+        }
+
+        button:hover {
+                background-color: #8b0000;
+        }
+
+        footer {
+text-align: center;
+background-color: #8b0000;
+color: white;
+padding: 20px;
+margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+header h1 {
+        font-size: 2rem;
+}
+
+nav a {
+display: inline-block;
+margin: 8px;
+}
+        }
+        </style>
+    </head>
+    <body>
+
+        <header>
+<h1>Pizzeria Empire pizza</h1>
+<p>La miglior pizza con vista lago!</p>
+<img src="logo.png">
+        </header>
+
+        <nav>
+<a href="#presentazione">Presentazione</a>
+<a href="#servizi">Servizi</a>
+<a href="#menu">Menù</a>
+<a href="#mappa">Mappa</a>
+<a href="#contatti">Contatti</a>
+<a href="#ordine">Ordina online</a>
+        </nav>
+
+        <section id="presentazione">
+<h2>Presentazione</h2>
+<div class="intro">
+<img src="pizza.jpg" alt="Pizza appena sfornata">
+<div class="intro-text">
+<p>
+Vi aspettiamo nella nostra pizzeria per farvi assaggiare le nostre gustose pizze!
+</p>
+<br>
+<p>
+Per voi soltanto i migliori ingredienti!
+</p>
+</div>
+</div>
+        </section>
+
+        <section id="servizi">
+<h2>Servizi offerti</h2>
+<div class="services">
+<div class="card">
+<img src="la-cena-servita-a-tavola-con-pizza-in-pizzeria-o-ristorante_341862-5520.avif" alt="Servizio al tavolo">
+<h3>Posti a sedere</h3>
+<p>Grandi spazi vista lago</p>
+</div>
+<div class="card">
+<img src="immagine-di-pizza-da-asporto-napoletana-per-pubblicizzare-locale.jpg" alt="Asporto">
+<h3>Pizza da asporto</h3>
+<p>Chiama e ordina la pizza che vuoi</p>
+</div>
+<div class="card">
+<img src="Consegna_Pizza_Domicilio.png" alt="Consegna a domicilio">
+<h3>Consegna gratuita ogni due pizze</h3>
+<p>Più pizze prendi, meno paghi</p>
+</div>
+</div>
+        </section>
+
+        <section id="menu">
+<h2>Menù pizze</h2>
+<table class="menu-table">
+<tr>
+<th>Pizza</th>
+<th>Ingredienti</th>
+<th>Prezzo</th>
+</tr>
+<tr>
+<td>Margherita</td>
+<td>Pomodoro, mozzarella, basilico</td>
+<td>€ 6,50</td>
+</tr>
+<tr>
+<td>Marinara</td>
+<td>Pomodoro, origano, aglio</td>
+<td>€ 6,00</td>
+</tr>
+<tr>
+<td>Diavola</td>
+<td>Pomodoro, mozzarella, salamino piccante</td>
+<td>€ 8,00</td>
+</tr>
+<tr>
+<td>Quattro Formaggi</td>
+<td>Pomodoro, mozzarella, gorgonzola, taleggio, fontina</td>
+<td>€ 9,00</td>
+</tr>
+<tr>
+<td>Capricciosa</td>
+<td>Pomodoro, mozzarella, prosciutto cotto, olive nere, carciofi, funghi</td>
+<td>€ 10,00</td>
+</tr>
+</table>
+        </section>
+
+        <section id="mappa">
+<h2>Mappa</h2>
+<p>Vieni a trovarci in via Verona, Sirmione</p>
+<div class="map-container">
+<iframe
+src="sirmione.png"
+allowfullscreen=""
+loading="lazy">
+</iframe>
+</div>
+        </section>
+
+        <section id="contatti" class="contacts">
+<h2>Contatti</h2>
+<p> <strong>Indirizzo:</strong>via Verona, Sirmione</p>
+<p> <strong>Telefono:</strong>0309901803</p>
+<p> <strong>Email:</strong>empirepizza@pec.it</p>
+<p> <strong>Orari:</strong>11.00-15.00 18.00-23.00</p>
+        </section>
+
+        <section id="ordine">
+<h2>Ordine online</h2>
+<p>Compila il modulo per inviare il tuo ordine.</p>
+<form>
+<input type="text" name="nome" placeholder="Il tuo nome" required>
+<input type="tel" name="telefono" placeholder="Telefono" required>
+<input type="text" name="indirizzo" placeholder="Indirizzo di consegna" required>
+<select name="pizza" required>
+<option value="">Seleziona una pizza</option>
+<option>Margherita</option>
+<option>Marinara</option>
+<option>Diavola</option>
+<option>Quattro Formaggi</option>
+<option>Capricciosa</option>
+</select>
+<input type="number" name="quantita" min="1" placeholder="Quantità" required>
+<textarea name="note" rows="4" placeholder="Note aggiuntive"></textarea>
+<button type="submit">Invia ordine</button>
+</form>
+        </section>
+
+        <footer>
+                <p>© 2026 Pizzeria Empire pizza - Tutti i diritti riservati</p>
+        </footer>
+        
+    </body>
+</html>
